@@ -1,0 +1,70 @@
+{
+  "name": "bo-vue",
+  "version": "0.1.0",
+  "description": "Bo Paris.fr",
+  "main": "client/index.js",
+  "scripts": {
+    "test": "testcafe all test/e2e/index.js --app \"npm run dev\" --app-init-delay 10000",
+    "build": "webpack --config build/webpack.prod.js",
+    "dev": "node build/server.js",
+    "lint": "xo **/client/**/*.{vue,js} !node_modules/**"
+  },
+  "author": "Julien Verkest",
+  "license": "MIT",
+  "xo": {
+    "extends": "./.eslintrc",
+    "esnext": true,
+    "envs": [
+      "browser"
+    ]
+  },
+  "dependencies": {
+    "algoliasearch": "^3.22.1",
+    "babel-runtime": "^6.18.0",
+    "bootstrap-vue": "^0.14.0",
+    "click-confirm": "^1.0.4",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1",
+    "promise-polyfill": "^6.0.2",
+    "vue": "^2.2.0",
+    "vue-authenticate": "^1.2.4",
+    "vue-awesome": "^2.3.0",
+    "vue-cookie": "^1.1.4",
+    "vue-resource": "^1.3.1",
+    "vue-router": "^2.0.0",
+    "vue-tables-2": "^0.6.2",
+    "vue2-selectize": "^1.0.3",
+    "vuex": "^2.0.0",
+    "vuex-router-sync": "^4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-core": "^6.16.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-vue-app": "^1.1.1",
+    "chalk": "^1.1.3",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^2.0.0",
+    "css-loader": "^0.23.1",
+    "eslint-config-vue": "latest",
+    "eslint-plugin-testcafe": "^0.2.0",
+    "eslint-plugin-vue": "latest",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "file-loader": "^0.9.0",
+    "friendly-errors-webpack-plugin": "^1.1.2",
+    "html-webpack-plugin": "^2.22.0",
+    "offline-plugin": "^4.5.3",
+    "postcss-loader": "^0.9.1",
+    "postcss-nested": "^1.0.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "testcafe": "^0.12.1",
+    "vue-loader": "^11.0.0",
+    "vue-template-compiler": "^2.2.0",
+    "webpack": "2.2.0",
+    "webpack-dev-middleware": "^1.8.1",
+    "webpack-hot-middleware": "^2.12.2",
+    "xo": "^0.18.0"
+  }
+}
